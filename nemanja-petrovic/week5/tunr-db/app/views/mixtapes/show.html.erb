@@ -1,0 +1,6 @@
+<h1><%= @mixtape.title %></h1>
+<% if @mixtape.user == @current_user %>
+  <%= link_to 'Edit Mixtape', edit_mixtape_path(@mixtape) %>
+<% end %>
+<br><br>
+(Songs Here)

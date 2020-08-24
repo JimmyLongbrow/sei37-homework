@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, intial-scale">
+    <title>Harper Brooks™</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="nav-bar"></div>
+    <div id="app">
+
+      <div class="product">
+
+        <div class="product-image">
+          <img v-bind:src="image" alt="bondi perfume">
+        </div>
+
+        <div class="product-info">
+
+          <h2>{{product}}®</h2>
+          <h5>{{description}}</h5>
+          <a v-bind:href="link">Click for Full Collection</a>
+          <p v-if="inventory > 5">In Stock</p>
+          <p v-else-if="inventory <= 5 && inventory > 0">Almost Sold Out!</p>
+          <p v-else>Out of Stock</p>
+          <span v-if="onSale"> 20% off sale</span>
+          <ul>
+            <li v-for="detail in details">{{detail}}</li>
+          </ul>
+
+          <div v-for="variant in variants"
+            :key="variant.variantId"
+            class="color-box"
+            @mouseover="updateProduct(variant.variantImage)">
+            <br>
+            <br>
+            <span v-for="size in sizes">Size:{{size}}</span>
+
+            <br>
+
+            <div class="cart">
+            </div>
+
+            <button v-on:click="addToCart">Add to Cart</button>
+            <button v-on:click="removeFromCart">Remove</button>
+            <p class="car">Cart({{cart}})</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <footer> ©Harper Brooks Australia 2020</footer>
+</html>

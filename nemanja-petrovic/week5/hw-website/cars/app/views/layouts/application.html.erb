@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nemo's Garage</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <h1>Pop by for a Test-Drive</h1>
+    <nav>
+      <a href=<%= fastcars_path() %>>Index</a>
+      |
+      <a href="<%= fastcars_new_path() %>">Bring her to the Garage</a>
+    </nav>
+    <hr>
+    <%= yield %>
+    <hr>
+    <footer>
+      &copy; HOT4's 2020
+    </footer>
+  </body>
+</html>

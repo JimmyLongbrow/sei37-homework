@@ -1,0 +1,15 @@
+<h2>All about <%= @spotter['name'] %> </h2>
+​
+<a href="/spotters/<%= @spotter['id']%>/edit">Edit This Spotter</a>
+|
+<a href="/spotters/<%= @spotter['id']%>/delete">Delete This Spotter</a>
+​
+<p>
+  <strong>Location</strong>
+  <%= @spotter['location'] %>
+</p>
+​
+<p>
+  <strong>Animal</strong>
+  <%= @spotter['animal_id'] %>
+</p>

@@ -1,0 +1,23 @@
+<h3><%= @fastcar.make %></h3>
+
+<a href="<%= fastcar_edit_path( @fastcar.id ) %>">Change Specs</a>
+|
+<a href="<%= fastcar_destroy_path( @fastcar.id ) %>">Ride-Off Car</a>
+<p>
+  <strong>Model:</strong>
+  <%= @fastcar.model %>
+</p>
+<p>
+  <strong>Quater-mile:</strong>
+  <%= @fastcar.quatermile%>
+</p>
+<p>
+  <strong>Top-Speed:</strong>
+  <%= @fastcar.topspeed %>
+</p>
+<p>
+  <strong>Kilowatts:</strong>
+  <%= @fastcar.kilowatts %>
+</p>
+
+<%= image_tag @fastcar.image, alt: @fastcar.name, class: 'fastcar' %>

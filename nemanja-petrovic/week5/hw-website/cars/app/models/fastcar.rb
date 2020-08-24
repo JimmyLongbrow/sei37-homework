@@ -1,0 +1,2 @@
+class Fastcar < ApplicationRecord
+end

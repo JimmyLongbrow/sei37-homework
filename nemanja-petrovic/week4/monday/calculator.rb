@@ -1,18 +1,18 @@
-# def calculator
-#   puts "a: "
-#   a = gets.chomp.to_f
-#   puts "b: "
-#   b = gets.chomp.to_f
-#   cal = gets.chomp
-#   if cal == "+"
-#     puts a+b
-#   elsif cal == "-"
-#     puts a-b
-#   elsif cal == "*"
-#     puts a*b
-#   elsif cal == "/"
-#     puts a/b
-# end
+def calculator
+  puts "a: "
+  a = gets.chomp.to_f
+  puts "b: "
+  b = gets.chomp.to_f
+  cal = gets.chomp
+  if cal == "+"
+    puts a+b
+  elsif cal == "-"
+    puts a-b
+  elsif cal == "*"
+    puts a*b
+  elsif cal == "/"
+    puts a/b
+end
 #
 # days_of_the_week = [Monday,
 #   Tuesday,
@@ -45,45 +45,45 @@
 
 # Array and Hash access
 # A. Given the following data structure:
-a = ["Anil", "Erik", "Jonathan"]
-# How would you return the string "Erik"?
-puts a.at(1)
-# How would you add your name to the array?
-a << "Nemo"
-#or a.push "Nemo"
-puts a
-# B. Given the following data structure:
-h = {0 => "Zero", 1 => "One", :two => "Two", "two" => 2}
-# How would you return the string "One"?
-puts h[1]
-# How would you return the string "Two"?
-puts h[:two]
-# How would you return the number 2?
-puts h["two"]
-# How would you add {3 => "Three"} to the hash?
-h[3] = "Three"
-# How would you add {:four => 4} to the hash?
-h[:four] = 4
-puts h
-# C. Given the following data structure:
-is = {true => "It's true!", false => "It's false"}
-# What is the return value of is[2 + 2 == 4]?
-if [2 + 2 == 4]
-  puts true
-end
-# What is the return value of is["Erik" == "Jonathan"]?
-if ["Erik" == "Jonathan"]
-  puts true
-end
-# What is the return value of is[9 > 10]?
-if [9 > 10]
-  puts true
-else false
-end
-# What is the return value of is[0]?
-"Zero"
-# What is the return value of is["Erik"]?
-a[0]
+# a = ["Anil", "Erik", "Jonathan"]
+# # How would you return the string "Erik"?
+# puts a.at(1)
+# # How would you add your name to the array?
+# a << "Nemo"
+# #or a.push "Nemo"
+# puts a
+# # B. Given the following data structure:
+# h = {0 => "Zero", 1 => "One", :two => "Two", "two" => 2}
+# # How would you return the string "One"?
+# puts h[1]
+# # How would you return the string "Two"?
+# puts h[:two]
+# # How would you return the number 2?
+# puts h["two"]
+# # How would you add {3 => "Three"} to the hash?
+# h[3] = "Three"
+# # How would you add {:four => 4} to the hash?
+# h[:four] = 4
+# puts h
+# # C. Given the following data structure:
+# is = {true => "It's true!", false => "It's false"}
+# # What is the return value of is[2 + 2 == 4]?
+# if [2 + 2 == 4]
+#   puts true
+# end
+# # What is the return value of is["Erik" == "Jonathan"]?
+# if ["Erik" == "Jonathan"]
+#   puts true
+# end
+# # What is the return value of is[9 > 10]?
+# if [9 > 10]
+#   puts true
+# else false
+# end
+# # What is the return value of is[0]?
+# "Zero"
+# # What is the return value of is["Erik"]?
+# a[0]
 # D. Given the following data structure:
 # users = {
 #   "Jonathan" => {

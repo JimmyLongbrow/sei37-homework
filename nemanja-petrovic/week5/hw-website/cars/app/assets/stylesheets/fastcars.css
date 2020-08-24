@@ -1,0 +1,9 @@
+body {
+  background-color: orange;
+  color: black;
+  font-family: monospace;
+}
+
+img.planet {
+  max-width: 500;
+}

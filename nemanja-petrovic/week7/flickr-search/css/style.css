@@ -1,0 +1,17 @@
+div#results img{
+   background: white;
+   margin: auto;
+   margin-top: 5px;
+   margin-left: 5px;
+   padding: 1px;
+   width: 140px;
+   height: 140px;
+}
+
+div {
+  margin-left: 15px;
+}
+
+body {
+  background-color: grey;
+}

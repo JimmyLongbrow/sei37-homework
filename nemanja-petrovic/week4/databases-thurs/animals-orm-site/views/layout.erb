@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animals of the World</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>Animals of the World: A Visual Guide</h1>
+    <nav>
+      <a href="/animals">Index</a>
+      |
+      <a href="/animals/new">Add Animal</a>
+      |
+      <a href="/spotters">View Spotters</a>
+      |
+      <a href="/spotters/new">Add Spotters</a>
+    </nav>
+    <hr>
+    <%= yield %> <!--inserts spec page content inside the page, basic route>
+    <hr/>
+    <footer>
+      &copy; Nemo Productions 2020
+    </footer>
+  </body>
+</html>

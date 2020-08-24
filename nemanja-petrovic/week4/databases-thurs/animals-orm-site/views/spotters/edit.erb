@@ -1,0 +1,24 @@
+<h2>Edit Spotter <%= @spotters['name']%></h2>
+​
+<form action="/spotters/<%= @spotter['id'] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @spotters['name']%>">
+  </label>
+  <br>
+​
+  <label>
+    Location:
+    <input type="text" name="location" value="<%= @spotter['location']%>">
+  </label>
+  <br>
+​
+  <label>
+    Animal:
+    <input type="text" name="animal" value="<%= @spotter['animal_id']%>">
+  </label>
+  <br>
+​
+  <input type="submit" value="Update Spotter">
+​
+</form>

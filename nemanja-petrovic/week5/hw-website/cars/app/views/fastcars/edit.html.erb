@@ -1,0 +1,23 @@
+<h2>Modify Car: <%= @fastcar.make %></h2>
+
+<form action="<%= fastcars_path( @fastcar.id ) %>" method="post">
+
+  <label>
+    Quarter-Mile: <input type="text" name="quartermile" value="<%= @fastcar.quartermile %>">
+  </label>
+  <br>
+  <label>
+    Top-Speed: <input type="text" name="topspeed" value="<%= @fastcar.topspeed %>">
+  </label>
+  <br>
+  <label>
+    Kilowatts: <input type="text" name="kilowatts" value="<%= @fastcar.kilowatts %>">
+  </label>
+  <br>
+  <label>
+    Image URL: <input type="text" name="image" value="<%= @fastcar.image %>">
+  </label>
+  <br>
+  <button>Update Planet</button>
+
+</form>

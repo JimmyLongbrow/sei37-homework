@@ -1,0 +1,10 @@
+<h2>Welcome to CARNATIC</h2
+
+<ul>
+    <% @fastcars.each do |l| %>
+    <li>
+      <a href="<%= fastcars_path(l.id) %>">
+      <%= l.make %></a>
+    </li>
+    <% end %>
+</ul>
